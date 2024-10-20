@@ -1,0 +1,29 @@
+@import "resetcss.css";
+@import "variables.css";
+/*components*/
+@import "components/statusbar.css";
+@import "components/navigation.css";
+@import "components/screenheader.css";
+@import "components/usercomponent.css";
+@import "components/badge.css";
+@import "components/iconrow.css";
+@import "components/alternativescreenheader.css";
+@import "components/nomobile.css";
+/*screen*/
+@import "screen/login.css";
+@import "screen/friends.css";
+@import "screen/find.css";
+@import "screen/more.css";
+@import "screen/settings.css";
+@import "screen/chat.css";
+
+body {
+    font-family: 'DotGothic16';
+    height: 150vh;
+    color: var(--yellow);
+    background-color: #331c3d;
+}
+
+.main-screen {
+    padding: 0px var(--horizontalspace);
+}

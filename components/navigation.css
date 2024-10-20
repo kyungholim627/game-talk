@@ -1,0 +1,44 @@
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--purple);
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link{
+    color: var(--yellow);
+    position: relative;
+}
+
+.nav__noti {
+    position: absolute; 
+    left: 30px;
+    top: -20px;
+    animation: notiAnimation 0.8s linear infinite;
+    color: greenyellow;
+}
+
+.nav__dot {
+    width: 6px;
+    height: 6px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    position:absolute;
+    left: 30px;
+    bottom: 25px;
+    animation: notiAnimation 0.8s linear infinite;
+}
+
+@keyframes notiAnimation {
+    0% {opacity:0;
+    }
+    100% {opacity:1;}
+}

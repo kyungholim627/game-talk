@@ -1,0 +1,32 @@
+.settings-setting {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0,0, 0.1);
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@keyframes Bounce {
+    0% {transform: none;}
+
+    50% {transform: translateY(-5px) rotateX(20deg);}
+
+    100% {transform: none;}
+}
+
+.settings-setting i {
+    margin-right: 30px;
+    font-size: 22px;
+    opacity:0.8;
+}
+
+.settings-setting:hover {
+    animation: Bounce 1s ease-in-out infinite;
+    cursor: pointer;
+}
+
+.settings-setting:last-child .settings-setting-column:last-child {
+    color: greenyellow;
+}
+

@@ -1,0 +1,34 @@
+.screen__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px var(--horizontalspace);
+    margin-bottom: 15px;
+}
+
+.header__title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.header__icons span {
+    margin-left: 25px;
+    color: var(--yellow)
+}
+
+.header__icons a{
+    color: var(--yellow);
+}
+
+@keyframes rotateGear {
+    from {
+        transform: none;
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.header__icons .fa-gear:hover {
+    animation: rotateGear 1s linear infinite;
+}
